@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-light">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top" style="z-index: 1020;">        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top" style="z-index: 1020;">
+        <div class="container">
             <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
                 <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
                 <div class="d-flex flex-column">
@@ -43,32 +44,127 @@
                 <li class="breadcrumb-item active" aria-current="page">Цитаты</li>
             </ol>
         </nav>
-        <h1 class="h2 mb-4">Цитаты и афоризмы</h1>
-        <div class="row g-4">
-            <div class="col-12 col-lg-8 mx-auto">
-                <div class="alert alert-light border shadow-sm mb-4" role="alert">
-                    <blockquote class="blockquote mb-0">
-                        <p class="fst-italic">«Если бы я знала, что из этого выйдет, я бы...»</p>
-                        <footer class="blockquote-footer mt-2">Анна Ахматова</footer>
-                    </blockquote>
-                </div>
-                <div class="alert alert-light border shadow-sm mb-4" role="alert">
-                    <blockquote class="blockquote mb-0">
-                        <p class="fst-italic">«И вечный бой! Покой нам только снится...»</p>
-                        <footer class="blockquote-footer mt-2">Александр Блок</footer>
-                    </blockquote>
-                </div>
-                <div class="alert alert-light border shadow-sm mb-4" role="alert">
-                    <blockquote class="blockquote mb-0">
-                        <p class="fst-italic">«Послушайте! Ведь, если звезды зажигают — значит — это кому-нибудь нужно?»</p>
-                        <footer class="blockquote-footer mt-2">Владимир Маяковский</footer>
-                    </blockquote>
-                </div>
-            </div>
+        
+        <div class="text-center mb-5">
+            <h1 class="h2 mb-3">Цитаты и афоризмы</h1>
+            <p class="text-muted">Мысли о жизни, любви и творчестве от великих поэтов Серебряного века.</p>
         </div>
 
-        <div class="mt-4 text-center">
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Предложить свою цитату или сообщить об ошибке</button>
+                <!-- КАРУСЕЛЬ ЦИТАТ (По одной на слайд) -->
+        <div id="quotesCarousel" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner pb-5">
+                
+                <!-- Слайд 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg border-0" style="background-color: rgba(253, 252, 249, 0.95); border-left: 4px solid #8c6b4a !important;">
+                                <div class="card-body p-5 text-center">
+                                    <blockquote class="blockquote mb-0">
+                                        <p class="mb-4 fst-italic" style="font-size: 1.4rem; line-height: 1.6;">«Я научила женщин говорить...»</p>
+                                        <footer class="blockquote-footer mt-auto">Анна Ахматова</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg border-0" style="background-color: rgba(253, 252, 249, 0.95); border-left: 4px solid #c9a86a !important;">
+                                <div class="card-body p-5 text-center">
+                                    <blockquote class="blockquote mb-0">
+                                        <p class="mb-4 fst-italic" style="font-size: 1.4rem; line-height: 1.6;">«И вечный бой! Покой нам только снится...»</p>
+                                        <footer class="blockquote-footer mt-auto">Александр Блок</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 3 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg border-0" style="background-color: rgba(253, 252, 249, 0.95); border-left: 4px solid #8c6b4a !important;">
+                                <div class="card-body p-5 text-center">
+                                    <blockquote class="blockquote mb-0">
+                                        <p class="mb-4 fst-italic" style="font-size: 1.4rem; line-height: 1.6;">«Послушайте! Ведь, если звезды зажигают — значит — это кому-нибудь нужно?»</p>
+                                        <footer class="blockquote-footer mt-auto">Владимир Маяковский</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 4 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg border-0" style="background-color: rgba(253, 252, 249, 0.95); border-left: 4px solid #c9a86a !important;">
+                                <div class="card-body p-5 text-center">
+                                    <blockquote class="blockquote mb-0">
+                                        <p class="mb-4 fst-italic" style="font-size: 1.4rem; line-height: 1.6;">«Поэт — это тот, кто в обыденном видит чудо.»</p>
+                                        <footer class="blockquote-footer mt-auto">Сергей Есенин</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 5 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg border-0" style="background-color: rgba(253, 252, 249, 0.95); border-left: 4px solid #8c6b4a !important;">
+                                <div class="card-body p-5 text-center">
+                                    <blockquote class="blockquote mb-0">
+                                        <p class="mb-4 fst-italic" style="font-size: 1.4rem; line-height: 1.6;">«Жить — значит гореть, а не тлеть.»</p>
+                                        <footer class="blockquote-footer mt-auto">Марина Цветаева</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 6 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg border-0" style="background-color: rgba(253, 252, 249, 0.95); border-left: 4px solid #c9a86a !important;">
+                                <div class="card-body p-5 text-center">
+                                    <blockquote class="blockquote mb-0">
+                                        <p class="mb-4 fst-italic" style="font-size: 1.4rem; line-height: 1.6;">«Слово — это поступок.»</p>
+                                        <footer class="blockquote-footer mt-auto">Валерий Брюсов</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Кнопки управления (стрелки) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#quotesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1); background-color: #4a3424; border-radius: 50%; padding: 1.5rem;"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#quotesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1); background-color: #4a3424; border-radius: 50%; padding: 1.5rem;"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>        
+        <div class="mt-5 text-center">
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Предложить свою цитату</button>
         </div>
     </main>
 
@@ -92,8 +188,8 @@
                             <input id="modal-email" type="email" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="modal-text" class="form-label">Ваше предложение или правка</label>
-                            <textarea id="modal-text" class="form-control" rows="3" placeholder="Напишите цитату или опишите ошибку..." required></textarea>
+                            <label for="modal-text" class="form-label">Ваша цитата или правка</label>
+                            <textarea id="modal-text" class="form-control" rows="3" placeholder="Напишите цитату..." required></textarea>
                         </div>
                         <div class="form-check mb-3">
                             <input id="modal-agree" class="form-check-input" type="checkbox" required>
@@ -109,9 +205,12 @@
         </div>
     </div>
 
+        <!-- ПОДВАЛ -->
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row g-4">
+                
+                <!-- Колонка 1: Логотип и слоган (4 колонки) -->
                 <div class="col-12 col-lg-4">
                     <div class="d-flex align-items-center mb-3">
                         <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
@@ -120,9 +219,13 @@
                             <span class="brand-slogan">Энциклопедия поэзии</span>
                         </div>
                     </div>
-                    <p class="text-white-50 small mb-0">Проект, посвященный литературному наследию рубежа XIX–XX веков. Читайте, изучайте и вдохновляйтесь.</p>
+                    <p class="text-white-50 small mb-0">
+                        Проект, посвященный литературному наследию рубежа XIX–XX веков.
+                    </p>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2 offset-lg-1">
+
+                <!-- Колонка 2: Разделы (2 колонки) -->
+                <div class="col-6 col-md-3 col-lg-2">
                     <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Разделы</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="alley_of_poets.html">Аллея поэтов</a></li>
@@ -130,6 +233,8 @@
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="quotes.html">Цитаты</a></li>
                     </ul>
                 </div>
+
+                <!-- Колонка 3: Эпоха (2 колонки) -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Эпоха</h5>
                     <ul class="list-unstyled">
@@ -138,14 +243,36 @@
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="relationships.html">Связи поэтов</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+
+                <!-- Колонка 4: Проект (2 колонки) -->
+                <div class="col-6 col-md-3 col-lg-2">
                     <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Проект</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="about_us.html">О проекте</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="subscribe.html">Подписка на стихи</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="subscribe.html">Подписка</a></li>
                     </ul>
                 </div>
+
+                <!-- Колонка 5: Контакты (2 колонки, справа) -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-white-50 small">
+                            <strong>Редактор:</strong><br>М. Хазова
+                        </li>
+                        <li class="mb-2 text-white-50 small">
+                            <strong>Email:</strong><br>
+                            <a href="mailto:editor@silver-age.ru" class="text-white-50 text-decoration-none">editor@silver-age.ru</a>
+                        </li>
+                        <li class="mb-2 text-white-50 small">
+                            <strong>Тел:</strong><br>+7 (999) 123-45-67
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
+            
+            <!-- Нижняя полоса с копирайтом -->
             <hr class="border-secondary mt-4 mb-3">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
