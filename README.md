@@ -76,7 +76,7 @@ kr2-bootstrap-shop/
 ├── mariengof.html
 ├── shershenevich.html
 ├── cvetaeva.html
-├── mayakovsky.html
+├── mayakovskiy.html
 ├── css/
 │   └── custom.css            # Кастомные стили (палитра, шрифты, эффекты)
 ├── js/
