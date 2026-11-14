@@ -84,3 +84,5 @@ kr2-bootstrap-shop/
 ├── images/                   # Фотографии поэтов, логотип, иконки
 ├── README.md
 └── .gitignore
+
+**Ссылка на сайт: ** https://itea-programmer.github.io/kr2-bootstrap-shop/
