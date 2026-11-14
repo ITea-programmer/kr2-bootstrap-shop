@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серебряный век – Цитаты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top" style="z-index: 1020;">        <div class="container">
+            <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
+                <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
+                <div class="d-flex flex-column">
+                    <span class="brand-title">Серебряный век</span>
+                    <span class="brand-slogan">Энциклопедия поэзии</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="alley_of_poets.html">Аллея поэтов</a></li>
+                    <li class="nav-item"><a class="nav-link" href="directions.html">Направления</a></li>
+                    <li class="nav-item"><a class="nav-link" href="timeline.html">Хронология</a></li>
+                    <li class="nav-item"><a class="nav-link" href="poems.html">Стихи</a></li>
+                    <li class="nav-item"><a class="nav-link" href="relationships.html">Связи</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="quotes.html">Цитаты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="subscribe.html">Подписка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">О проекте</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="h2 mb-4">Цитаты и афоризмы</h1>
+        <div class="row g-4">
+            <div class="col-12 col-lg-8 mx-auto">
+                <div class="alert alert-light border shadow-sm mb-4" role="alert">
+                    <blockquote class="blockquote mb-0">
+                        <p class="fst-italic">«Если бы я знала, что из этого выйдет, я бы...»</p>
+                        <footer class="blockquote-footer mt-2">Анна Ахматова</footer>
+                    </blockquote>
+                </div>
+                <div class="alert alert-light border shadow-sm mb-4" role="alert">
+                    <blockquote class="blockquote mb-0">
+                        <p class="fst-italic">«И вечный бой! Покой нам только снится...»</p>
+                        <footer class="blockquote-footer mt-2">Александр Блок</footer>
+                    </blockquote>
+                </div>
+                <div class="alert alert-light border shadow-sm mb-4" role="alert">
+                    <blockquote class="blockquote mb-0">
+                        <p class="fst-italic">«Послушайте! Ведь, если звезды зажигают — значит — это кому-нибудь нужно?»</p>
+                        <footer class="blockquote-footer mt-2">Владимир Маяковский</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Предложить свою цитату или сообщить об ошибке</button>
+        </div>
+    </main>
+
+    <!-- МОДАЛЬНОЕ ОКНО "РЕДАКТОРУ САЙТА" -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="orderModalLabel">Редактору сайта</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-3">Хотите предложить цитату для добавления или нашли ошибку в существующей? Напишите нам!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="modal-name" class="form-label">Ваше имя</label>
+                            <input id="modal-name" type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-email" class="form-label">E-mail для связи</label>
+                            <input id="modal-email" type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-text" class="form-label">Ваше предложение или правка</label>
+                            <textarea id="modal-text" class="form-control" rows="3" placeholder="Напишите цитату или опишите ошибку..." required></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input id="modal-agree" class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label" for="modal-agree">Согласен на обработку данных</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
+                        <div class="d-flex flex-column">
+                            <span class="brand-title">Серебряный век</span>
+                            <span class="brand-slogan">Энциклопедия поэзии</span>
+                        </div>
+                    </div>
+                    <p class="text-white-50 small mb-0">Проект, посвященный литературному наследию рубежа XIX–XX веков. Читайте, изучайте и вдохновляйтесь.</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 offset-lg-1">
+                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Разделы</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="alley_of_poets.html">Аллея поэтов</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="poems.html">Стихи</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="quotes.html">Цитаты</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Эпоха</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="directions.html">Направления</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="timeline.html">Хронология</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="relationships.html">Связи поэтов</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Проект</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="about_us.html">О проекте</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="subscribe.html">Подписка на стихи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4 mb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-white-50 mb-0 small">&copy; 2026 Серебряный век. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <span class="text-white-50 small">Сделано с любовью к литературе</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="scrollToTopBtn" class="scroll-top-btn" title="Наверх">
+        <img src="images/feather.png" alt="Наверх" class="feather-img">
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

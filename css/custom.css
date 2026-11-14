@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+/* =========================================
+   1. БАЗОВЫЕ НАСТРОЙКИ И ШРИФТЫ
+   ========================================= */
+body {
+    background-color: #f4f1ea; /* Цвет старой бумаги (сепия) */
+    color: #2c2c2c; /* Темно-серый, почти черный цвет для текста */
+    font-family: 'PT Serif', Georgia, serif; /* Классическая русская антиква для текста */
+    min-height: 100vh;
+}
+
+/* Заголовки делаем контрастными и элегантными */
+h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
+    font-family: 'Playfair Display', serif; /* Высококонтрастный шрифт модерна */
+    font-weight: 700;
+    color: #1a1a1a; 
+}
+
+/* Кнопки и навигация (гротеск убираем, оставляем стиль ретро) */
+.btn, .nav-link, .badge {
+    font-family: 'PT Serif', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   2. НАВИГАЦИЯ (NAVBAR)
+   ========================================= */
+/* Меняем стандартный черный фон на цвет темного дерева/кожи */
+.navbar.bg-dark {
+    background-color: #2b1d14 !important; /* Темно-коричневый */
+    border-bottom: 3px solid #8c6b4a; /* Полоска под навигацией */
+}
+
+.navbar-brand {
+    color: #e6d5b8 !important; /* Светло-бежевый цвет для логотипа */
+    letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #d1c1a5 !important; /* Бежевый для ссылок */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff !important; /* Белый при наведении и на активной вкладке */
+}
+
+/* =========================================
+   3. КАРТОЧКИ (CARDS)
+   ========================================= */
+.card {
+    background-color: #fdfcf9; /* Чуть более светлый оттенок бумаги */
+    border: 1px solid #d8d0c5; /* Мягкая рамка */
+    border-radius: 4px; /* Убираем сильные скругления, чтобы было строже */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important; /* Очень легкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px); /* Карточка слегка приподнимается */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card-header {
+    background-color: #f4f1ea !important; /* Фон шапки карточки */
+    border-bottom: 1px solid #d8d0c5;
+}
+/* Стили для портретов в карточках */
+.poet-photo {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: center 20%; /* Центрируем лицо поэта */
+    filter: sepia(0.8); 
+}
+
+/* Красивое отображение фото на странице поэта */
+.poet-page-img {
+    width: 100%;
+    height: 100%;
+    min-height: 450px; 
+    max-height: 600px; 
+    object-fit: cover; 
+    object-position: center 20%; 
+    border-radius: 4px;
+    filter: sepia(0.8); 
+
+}
+/* =========================================
+   4. КНОПКИ (BUTTONS)
+   ========================================= */
+/* Основные кнопки - цвет темно-коричневого бархата */
+.btn-primary {
+    background-color: #4a3424;
+    border-color: #4a3424;
+    color: #f4f1ea;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #382518;
+    border-color: #382518;
+    color: #ffffff;
+}
+
+/* Вторичные кнопки - контурные */
+.btn-outline-primary {
+    color: #4a3424;
+    border-color: #4a3424;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4a3424;
+    color: #f4f1ea;
+}
+
+/* =========================================
+   5. ЗНАЧКИ (BADGES) И АКЦЕНТЫ
+   ========================================= */
+/* Перекрашиваем стандартные цвета бейджей под палитру "Серебряного века" */
+.badge.bg-success { background-color: #5c7a6b !important; } /* Приглушенный зеленый (акмеизм) */
+.badge.bg-warning { background-color: #c9a86a !important; color: #2c2c2c !important; } /* Золотистый (символизм) */
+.badge.bg-danger  { background-color: #8a4a4a !important; } /* Приглушенный бордовый (футуризм) */
+.badge.bg-info    { background-color: #6b7c8a !important; } /* Серо-голубой */
+
+/* =========================================
+   6. ФОРМЫ (Форма подписки)
+   ========================================= */
+.form-control, .form-select, .input-group-text {
+    background-color: #fdfcf9;
+    border: 1px solid #c4b8a8;
+    color: #2c2c2c;
+    font-family: 'Lora', serif;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #ffffff;
+    border-color: #8c6b4a;
+    box-shadow: 0 0 0 0.25rem rgba(140, 107, 74, 0.25);
+}
+
+.input-group-text {
+    background-color: #eaddcc;
+    color: #4a3424;
+}
+
+/* =========================================
+   7. АККОРДЕОН, ВКЛАДКИ И ЦИТАТЫ
+   ========================================= */
+/* Перекрашиваем кнопки аккордеона */
+.accordion-button:not(.collapsed) {
+    background-color: #eaddcc;
+    color: #2c2c2c;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #c4b8a8;
+}
+
+/* Вкладки */
+.nav-tabs .nav-link.active {
+    color: #4a3424;
+    background-color: #fdfcf9;
+    border-color: #d8d0c5 #d8d0c5 #fdfcf9;
+    font-weight: 600;
+}
+.nav-tabs .nav-link {
+    color: #6b5e51;
+}
+
+/* Оформление цитат */
+blockquote {
+    border-left: 4px solid #8c6b4a;
+    padding-left: 15px;
+    font-style: italic;
+    color: #4a3424;
+}
+
+/* =========================================
+   8. ПОДВАЛ (FOOTER)
+   ========================================= */
+footer.bg-dark {
+    background-color: #2b1d14 !important;
+    border-top: 3px solid #8c6b4a;
+}
+/* =========================================
+   10. КНОПКА "НАВЕРХ" (перо)
+   ========================================= */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #f4f1ea;
+    border: 2px solid #8c6b4a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background-color: #eaddcc;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.feather-img {
+    width: 50px;
+    height: auto;
+    transform: rotate(-15deg);
+    transition: transform 0.3s ease;
+}
+
+.scroll-top-btn:hover .feather-img {
+    transform: rotate(0deg) scale(1.1);
+}
+/* =========================================
+   11. СТИЛИЗАЦИЯ СООБЩЕНИЙ (ALERTS)
+   ========================================= */
+
+/* Информационные сообщения (alert-info) */
+.alert-info {
+    background-color: #fdfcf9 !important; /* Цвет бумаги */
+    border: 1px solid #c4b8a8 !important; /* Мягкая бежевая рамка */
+    border-left: 4px solid #8c6b4a !important; /* Акцентная полоска слева (как закладка) */
+    color: #4a3424 !important; /* Темно-коричневый текст */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); /* Легкая тень */
+}
+
+/* Предупреждения (alert-warning) — например, для "Стихотворения дня" */
+.alert-warning {
+    background-color: #fcf8f2 !important;
+    border: 1px solid #e0d4c3 !important;
+    border-left: 4px solid #c9a86a !important; 
+    color: #4a3424 !important;
+    padding: 1.5rem; /* Добавили отступы внутри плашки */
+}
+/* =========================================
+   12. ЦВЕТА ДЛЯ ХРОНОЛОГИИ
+   ========================================= */
+/* Светло-коричневый (для 1890-х) */
+.bg-era-light {
+    background-color: #6b5e51 !important; 
+    border-bottom: 2px solid #4a3424;
+}
+
+/* Приглушенный бордовый/винный (для 1910-х) */
+.bg-era-mid {
+    background-color: #7a4b4b !important;
+    border-bottom: 2px solid #4a3424;
+}
+
+/* Темный (для 1920-х) */
+.bg-dark {
+    background-color: #382518 !important; 
+    border-bottom: 2px solid #1a100a;
+}
+/* =========================================
+   НАСТРОЙКИ ЛОГОТИПА И ШАПКИ
+   ========================================= */
+
+/* Настройки логотипа */
+.logo-brand {
+    height: 45px; 
+    width: auto;
+    object-fit: contain;
+}
+
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #e6d5b8;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.brand-slogan {
+    font-family: 'PT Serif', serif;
+    font-size: 0.75rem;
+    color: #a89984;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2px;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 0.95rem;
+}
+/* =========================================
+   СТИЛИЗАЦИЯ ГИПЕРССЫЛОК В ТЕКСТЕ
+   ========================================= */
+
+/* Обычные ссылки (например, имена поэтов в тексте) */
+a {
+    color: #7a4b4b; /* Приглушенный винный/бордовый цвет */
+    text-decoration: underline;
+    text-decoration-thickness: 1px; /* Делаем подчеркивание тоньше и изящнее */
+    text-underline-offset: 3px;     /* Чуть отодвигаем линию от текста */
+    transition: color 0.3s ease;
+}
+
+/* При наведении мышки */
+a:hover {
+    color: #4a3424; /* Темно-коричневый */
+    text-decoration-color: #4a3424;
+}
+
+/* Исключение: чтобы это правило не сломало дизайн кнопок и навигации */
+.btn, .nav-link, .navbar-brand, .breadcrumb-item a {
+    text-decoration: none !important;
+}
+/* =========================================
+   13. СТИЛИ ДЛЯ HERO-БЛОКА (Главная страница)
+   ========================================= */
+#hero-image {
+    width: 100%;
+    height: 100%;
+    max-height: 500px; /* Ограничиваем максимальную высоту */
+    object-fit: cover; /* Картинка заполняет блок без искажений */
+    object-position: center 20%; /* Фокус на лице (чуть выше центра) */
+    filter: sepia(0.8);
+    transition: opacity 0.5s ease-in-out; /* Плавное появление */
+}

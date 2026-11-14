@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серебряный век – Направления</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top" style="z-index: 1020;">        <div class="container">
+            <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
+                <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
+                <div class="d-flex flex-column">
+                    <span class="brand-title">Серебряный век</span>
+                    <span class="brand-slogan">Энциклопедия поэзии</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="alley_of_poets.html">Аллея поэтов</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="directions.html">Направления</a></li>
+                    <li class="nav-item"><a class="nav-link" href="timeline.html">Хронология</a></li>
+                    <li class="nav-item"><a class="nav-link" href="poems.html">Стихи</a></li>
+                    <li class="nav-item"><a class="nav-link" href="relationships.html">Связи</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quotes.html">Цитаты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="subscribe.html">Подписка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">О проекте</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="h2 mb-4">Литературные направления</h1>
+        
+        <!-- Вкладки (добавлен flex-wrap для мобильных экранов) -->
+        <ul class="nav nav-tabs flex-wrap" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="sym-tab" data-bs-toggle="tab" data-bs-target="#sym" type="button" role="tab">Символизм</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="acme-tab" data-bs-toggle="tab" data-bs-target="#acme" type="button" role="tab">Акмеизм</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="fut-tab" data-bs-toggle="tab" data-bs-target="#fut" type="button" role="tab">Футуризм</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="imag-tab" data-bs-toggle="tab" data-bs-target="#imag" type="button" role="tab">Имажинизм</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ego-tab" data-bs-toggle="tab" data-bs-target="#ego" type="button" role="tab">Эгофутуризм</button>
+            </li>
+        </ul>
+
+        <!-- Содержимое вкладок -->
+        <div class="tab-content mt-4" id="myTabContent">
+            
+            <!-- Символизм -->
+            <div class="tab-pane fade show active" id="sym" role="tabpanel">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4">Символизм</h3>
+                        <p>Ключевые черты: мистицизм, использование символов, музыкальность стиха.</p>
+                        <p><strong>Представители:</strong> <a href="blok.html">Александр Блок</a>, <a href="belyi.html">Андрей Белый</a>, <a href="bryusov.html">Валерий Брюсов</a>.</p>                    </div>
+                </div>
+            </div>
+
+            <!-- Акмеизм -->
+            <div class="tab-pane fade" id="acme" role="tabpanel">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4">Акмеизм</h3>
+                        <p>Ключевые черты: ясность, предметность, отказ от мистики.</p>
+                        <p><strong>Представители:</strong> <a href="ahmatova.html">Анна Ахматова</a>, Николай Гумилев, Осип Мандельштам.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Футуризм -->
+            <div class="tab-pane fade" id="fut" role="tabpanel">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4">Футуризм</h3>
+                        <p>Ключевые черты: эпатаж, словотворчество, отказ от классических форм.</p>
+                        <p><strong>Представители:</strong> <a href="mayakovskiy.html">Владимир Маяковский</a>, Велимир Хлебников.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Имажинизм (Новое) -->
+            <div class="tab-pane fade" id="imag" role="tabpanel">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4">Имажинизм</h3>
+                        <p>Ключевые черты: главенство образа (метафоры), эпатаж, попытка создать новый язык.</p>
+                        <p><strong>Представители:</strong> <a href="esenin.html">Сергей Есенин</a>, <a href="mariengof.html">Анатолий Мариенгоф</a>, <a href="shershenevich.html">Вадим Шершеневич</a>.</p>                    </div>
+                </div>
+            </div>
+
+            <!-- Эгофутуризм (Новое) -->
+            <div class="tab-pane fade" id="ego" role="tabpanel">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4">Эгофутуризм</h3>
+                        <p>Ключевые черты: культ личности, эстетизм, создание новых слов, поиск «неизведанного».</p>
+                        <p><strong>Представители:</strong> Игорь Северянин, Иван Игнатьев.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Кнопка модального окна -->
+        <div class="mt-4">
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Нашли неточность? Сообщить о правке</button>
+        </div>
+    </main>
+
+    <!-- МОДАЛЬНОЕ ОКНО "РЕДАКТОРУ САЙТА" -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="orderModalLabel">Редактору сайта</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-3">Нашли неточность в описании направлений? Сообщите нам, и мы обязательно всё исправим.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="modal-name" class="form-label">Ваше имя</label>
+                            <input id="modal-name" type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-email" class="form-label">E-mail для связи</label>
+                            <input id="modal-email" type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modal-text" class="form-label">Что нужно исправить?</label>
+                            <textarea id="modal-text" class="form-control" rows="3" placeholder="Опишите ошибку или предложение..." required></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input id="modal-agree" class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label" for="modal-agree">Согласен на обработку данных</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ПОДВАЛ -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
+                        <div class="d-flex flex-column">
+                            <span class="brand-title">Серебряный век</span>
+                            <span class="brand-slogan">Энциклопедия поэзии</span>
+                        </div>
+                    </div>
+                    <p class="text-white-50 small mb-0">Проект, посвященный литературному наследию рубежа XIX–XX веков. Читайте, изучайте и вдохновляйтесь.</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 offset-lg-1">
+                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Разделы</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="alley_of_poets.html">Аллея поэтов</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="poems.html">Стихи</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="quotes.html">Цитаты</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Эпоха</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="directions.html">Направления</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="timeline.html">Хронология</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="relationships.html">Связи поэтов</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Проект</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="about_us.html">О проекте</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="subscribe.html">Подписка на стихи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4 mb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-white-50 mb-0 small">&copy; 2026 Серебряный век. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <span class="text-white-50 small">Сделано с любовью к литературе</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="scrollToTopBtn" class="scroll-top-btn" title="Наверх">
+        <img src="images/feather.png" alt="Наверх" class="feather-img">
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
