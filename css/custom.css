@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
 /* =========================================
    1. БАЗОВЫЕ НАСТРОЙКИ И ШРИФТЫ
    ========================================= */
 body {
-    background-color: #f4f1ea; /* Цвет старой бумаги (сепия) */
-    color: #2c2c2c; /* Темно-серый, почти черный цвет для текста */
-    font-family: 'PT Serif', Georgia, serif; /* Классическая русская антиква для текста */
+    background-color: #f4f1ea; 
+    color: #2c2c2c; 
+    font-family: 'PT Serif', Georgia, serif; 
     min-height: 100vh;
 }
 
-/* Заголовки делаем контрастными и элегантными */
 h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
-    font-family: 'Playfair Display', serif; /* Высококонтрастный шрифт модерна */
+    font-family: 'Playfair Display', serif; 
     font-weight: 700;
     color: #1a1a1a; 
 }
 
-/* Кнопки и навигация (гротеск убираем, оставляем стиль ретро) */
 .btn, .nav-link, .badge {
     font-family: 'PT Serif', Georgia, serif;
     font-weight: 700;
@@ -26,19 +25,18 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
 /* =========================================
    2. НАВИГАЦИЯ (NAVBAR)
    ========================================= */
-/* Меняем стандартный черный фон на цвет темного дерева/кожи */
 .navbar.bg-dark {
-    background-color: #2b1d14 !important; /* Темно-коричневый */
-    border-bottom: 3px solid #8c6b4a; /* Полоска под навигацией */
+    background-color: #2b1d14 !important; 
+    border-bottom: 3px solid #8c6b4a; 
 }
 
 .navbar-brand {
-    color: #e6d5b8 !important; /* Светло-бежевый цвет для логотипа */
+    color: #e6d5b8 !important; 
     letter-spacing: 1px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #d1c1a5 !important; /* Бежевый для ссылок */
+    color: #d1c1a5 !important; 
     font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     transition: color 0.3s ease;
@@ -46,39 +44,38 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #ffffff !important; /* Белый при наведении и на активной вкладке */
+    color: #ffffff !important; 
 }
 
 /* =========================================
    3. КАРТОЧКИ (CARDS)
    ========================================= */
 .card {
-    background-color: #fdfcf9; /* Чуть более светлый оттенок бумаги */
-    border: 1px solid #d8d0c5; /* Мягкая рамка */
-    border-radius: 4px; /* Убираем сильные скругления, чтобы было строже */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important; /* Очень легкая тень */
+    background-color: #fdfcf9; 
+    border: 1px solid #d8d0c5; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-4px); /* Карточка слегка приподнимается */
+    transform: translateY(-4px); 
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
 }
 
 .card-header {
-    background-color: #f4f1ea !important; /* Фон шапки карточки */
+    background-color: #f4f1ea !important; 
     border-bottom: 1px solid #d8d0c5;
 }
-/* Стили для портретов в карточках */
+
 .poet-photo {
     width: 100%;
     height: 300px; 
     object-fit: cover; 
-    object-position: center 20%; /* Центрируем лицо поэта */
+    object-position: center 20%; 
     filter: sepia(0.8); 
 }
 
-/* Красивое отображение фото на странице поэта */
 .poet-page-img {
     width: 100%;
     height: 100%;
@@ -88,12 +85,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
     object-position: center 20%; 
     border-radius: 4px;
     filter: sepia(0.8); 
-
 }
+
 /* =========================================
    4. КНОПКИ (BUTTONS)
    ========================================= */
-/* Основные кнопки - цвет темно-коричневого бархата */
 .btn-primary {
     background-color: #4a3424;
     border-color: #4a3424;
@@ -107,7 +103,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
     color: #ffffff;
 }
 
-/* Вторичные кнопки - контурные */
 .btn-outline-primary {
     color: #4a3424;
     border-color: #4a3424;
@@ -122,11 +117,10 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
 /* =========================================
    5. ЗНАЧКИ (BADGES) И АКЦЕНТЫ
    ========================================= */
-/* Перекрашиваем стандартные цвета бейджей под палитру "Серебряного века" */
-.badge.bg-success { background-color: #5c7a6b !important; } /* Приглушенный зеленый (акмеизм) */
-.badge.bg-warning { background-color: #c9a86a !important; color: #2c2c2c !important; } /* Золотистый (символизм) */
-.badge.bg-danger  { background-color: #8a4a4a !important; } /* Приглушенный бордовый (футуризм) */
-.badge.bg-info    { background-color: #6b7c8a !important; } /* Серо-голубой */
+.badge.bg-success { background-color: #5c7a6b !important; } 
+.badge.bg-warning { background-color: #c9a86a !important; color: #2c2c2c !important; } 
+.badge.bg-danger  { background-color: #8a4a4a !important; } 
+.badge.bg-info    { background-color: #6b7c8a !important; }
 
 /* =========================================
    6. ФОРМЫ (Форма подписки)
@@ -152,7 +146,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
 /* =========================================
    7. АККОРДЕОН, ВКЛАДКИ И ЦИТАТЫ
    ========================================= */
-/* Перекрашиваем кнопки аккордеона */
 .accordion-button:not(.collapsed) {
     background-color: #eaddcc;
     color: #2c2c2c;
@@ -162,7 +155,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
     border-color: #c4b8a8;
 }
 
-/* Вкладки */
 .nav-tabs .nav-link.active {
     color: #4a3424;
     background-color: #fdfcf9;
@@ -173,7 +165,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title {
     color: #6b5e51;
 }
 
-/* Оформление цитат */
 blockquote {
     border-left: 4px solid #8c6b4a;
     padding-left: 15px;
@@ -188,6 +179,7 @@ footer.bg-dark {
     background-color: #2b1d14 !important;
     border-top: 3px solid #8c6b4a;
 }
+
 /* =========================================
    10. КНОПКА "НАВЕРХ" (перо)
    ========================================= */
@@ -233,52 +225,58 @@ footer.bg-dark {
 .scroll-top-btn:hover .feather-img {
     transform: rotate(0deg) scale(1.1);
 }
+
 /* =========================================
    11. СТИЛИЗАЦИЯ СООБЩЕНИЙ (ALERTS)
    ========================================= */
-
-/* Информационные сообщения (alert-info) */
 .alert-info {
-    background-color: #fdfcf9 !important; /* Цвет бумаги */
-    border: 1px solid #c4b8a8 !important; /* Мягкая бежевая рамка */
-    border-left: 4px solid #8c6b4a !important; /* Акцентная полоска слева (как закладка) */
-    color: #4a3424 !important; /* Темно-коричневый текст */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); /* Легкая тень */
+    background-color: #fdfcf9 !important; 
+    border: 1px solid #c4b8a8 !important; 
+    border-left: 4px solid #8c6b4a !important; 
+    color: #4a3424 !important; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); 
 }
 
-/* Предупреждения (alert-warning) — например, для "Стихотворения дня" */
 .alert-warning {
     background-color: #fcf8f2 !important;
     border: 1px solid #e0d4c3 !important;
     border-left: 4px solid #c9a86a !important; 
     color: #4a3424 !important;
-    padding: 1.5rem; /* Добавили отступы внутри плашки */
+    padding: 1.5rem; 
 }
+
 /* =========================================
-   12. ЦВЕТА ДЛЯ ХРОНОЛОГИИ
+   12. ЦВЕТА ДЛЯ ХРОНОЛОГИИ (Кастомные классы)
    ========================================= */
-/* Светло-коричневый (для 1890-х) */
-.bg-era-light {
+.era-bg-light {
     background-color: #6b5e51 !important; 
-    border-bottom: 2px solid #4a3424;
+    color: #ffffff !important;
 }
-
-/* Приглушенный бордовый/винный (для 1910-х) */
-.bg-era-mid {
+.era-bg-secondary {
+    background-color: #6c757d !important; 
+    color: #ffffff !important;
+}
+.era-bg-mid {
     background-color: #7a4b4b !important;
-    border-bottom: 2px solid #4a3424;
+    color: #ffffff !important;
 }
-
-/* Темный (для 1920-х) */
-.bg-era-dark {
+.era-bg-dark {
     background-color: #382518 !important; 
+    color: #ffffff !important;
     border-bottom: 2px solid #1a100a;
 }
+
+/* Убираем стандартную синюю тень Bootstrap при раскрытии */
+.accordion-button:not(.collapsed).era-bg-light,
+.accordion-button:not(.collapsed).era-bg-secondary,
+.accordion-button:not(.collapsed).era-bg-mid,
+.accordion-button:not(.collapsed).era-bg-dark {
+    box-shadow: none; 
+}
+
 /* =========================================
    НАСТРОЙКИ ЛОГОТИПА И ШАПКИ
    ========================================= */
-
-/* Настройки логотипа */
 .logo-brand {
     height: 45px; 
     width: auto;
@@ -308,38 +306,36 @@ footer.bg-dark {
     padding-right: 0.8rem;
     font-size: 0.95rem;
 }
+
 /* =========================================
    СТИЛИЗАЦИЯ ГИПЕРССЫЛОК В ТЕКСТЕ
    ========================================= */
-
-/* Обычные ссылки (например, имена поэтов в тексте) */
 a {
-    color: #7a4b4b; /* Приглушенный винный/бордовый цвет */
+    color: #7a4b4b; 
     text-decoration: underline;
-    text-decoration-thickness: 1px; /* Делаем подчеркивание тоньше и изящнее */
-    text-underline-offset: 3px;     /* Чуть отодвигаем линию от текста */
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px;     
     transition: color 0.3s ease;
 }
 
-/* При наведении мышки */
 a:hover {
-    color: #4a3424; /* Темно-коричневый */
+    color: #4a3424; 
     text-decoration-color: #4a3424;
 }
 
-/* Исключение: чтобы это правило не сломало дизайн кнопок и навигации */
 .btn, .nav-link, .navbar-brand, .breadcrumb-item a {
     text-decoration: none !important;
 }
+
 /* =========================================
    13. СТИЛИ ДЛЯ HERO-БЛОКА (Главная страница)
    ========================================= */
 #hero-image {
     width: 100%;
     height: 100%;
-    max-height: 500px; /* Ограничиваем максимальную высоту */
-    object-fit: cover; /* Картинка заполняет блок без искажений */
-    object-position: center 20%; /* Фокус на лице (чуть выше центра) */
+    max-height: 500px; 
+    object-fit: cover; 
+    object-position: center 20%; 
     filter: sepia(0.8);
-    transition: opacity 0.5s ease-in-out; /* Плавное появление */
+    transition: opacity 0.5s ease-in-out; 
 }
