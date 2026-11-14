@@ -85,4 +85,5 @@ kr2-bootstrap-shop/
 ├── README.md
 └── .gitignore
 
-**Ссылка на сайт: ** https://itea-programmer.github.io/kr2-bootstrap-shop/
+
+**Ссылка на сайт:** https://itea-programmer.github.io/kr2-bootstrap-shop/
