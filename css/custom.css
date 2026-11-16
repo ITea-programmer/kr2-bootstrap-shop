@@ -189,7 +189,35 @@ blockquote {
     font-style: italic;
     color: #4a3424;
 }
+/* Цвета для активных вкладок Направлений */
+#sym-tab.active {
+    background-color: #c9a86a !important; /* Золотистый (Символизм) */
+    color: #2c2c2c !important;
+    border-color: #c9a86a;
+}
 
+#acme-tab.active {
+    background-color: #5c7a6b !important; /* Зеленый (Акмеизм) */
+    color: #ffffff !important;
+    border-color: #5c7a6b;
+}
+
+#fut-tab.active {
+    background-color: #8a4a4a !important; /* Бордовый (Футуризм) */
+    color: #ffffff !important;
+    border-color: #8a4a4a;
+}
+
+#imag-tab.active {
+    background-color: #8a4a4a !important; /* Бордовый (Имажинизм, у вас на карточках тоже bg-danger) */
+    color: #ffffff !important;
+    border-color: #8a4a4a;
+}
+#ego-tab.active {
+    background-color: #6b7c8a !important; /* Серо-голубой */
+    color: #ffffff !important;
+    border-color: #6b7c8a;
+}
 /* =========================================
    8. ПОДВАЛ (FOOTER)
    ========================================= */
@@ -350,10 +378,42 @@ a:hover {
    ========================================= */
 #hero-image {
     width: 100%;
-    height: 100%;
-    max-height: 500px; 
-    object-fit: cover; 
-    object-position: center 20%; 
-    filter: sepia(0.8);
+    display: block;
+    filter: sepia(0.6) contrast(1.05); 
     transition: opacity 0.5s ease-in-out; 
+    /* Добавим красивую рамку, как у старых фото */
+    border: 8px solid #f4f1ea;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+/* =========================================
+   ИКОНКИ СОЦИАЛЬНЫХ СЕТЕЙ В ПОДВАЛЕ
+   ========================================= */
+/* Контейнер для соцсетей */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;  /* Фиксированная ширина ячейки */
+    height: 36px; /* Фиксированная высота ячейки */
+}
+
+/* Общие стили для всех иконок (и SVG, и картинок) */
+.social-img {
+    width: 32px;  /* Размер квадратных иконок */
+    height: 32px;
+    object-fit: contain;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    filter: grayscale(100%) opacity(0.5);
+    border-radius: 8px;
+}
+/* Чтобы круглая иконка ТГ не казалась больше, мы можем сделать её чуть меньше */
+.social-icon:nth-child(2) .social-img {
+    width: 30px;
+    height: 30px;
+}
+
+/* При наведении */
+.social-icon:hover .social-img {
+    filter: grayscale(0%) opacity(1);
+    transform: translateY(-3px);
 }

@@ -28,12 +28,8 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="alley_of_poets.html">Аллея поэтов</a></li>
-                    <li class="nav-item"><a class="nav-link" href="directions.html">Направления</a></li>
-                    <li class="nav-item"><a class="nav-link" href="timeline.html">Хронология</a></li>
                     <li class="nav-item"><a class="nav-link" href="poems.html">Стихи</a></li>
                     <li class="nav-item"><a class="nav-link" href="relationships.html">Связи</a></li>
-                    <li class="nav-item"><a class="nav-link" href="quotes.html">Цитаты</a></li>
-                    <li class="nav-item"><a class="nav-link" href="subscribe.html">Подписка</a></li>
                     <li class="nav-item"><a class="nav-link" href="about_us.html">О проекте</a></li>
                 </ul>
             </div>
@@ -49,9 +45,10 @@
                     <p class="lead text-muted">Погрузитесь в атмосферу рубежа XIX–XX веков. Биографии, стихи и связи между великими авторами.</p>
                     <a class="btn btn-primary btn-lg" href="alley_of_poets.html">Перейти к поэтам</a>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="shadow-sm border-0 overflow-hidden rounded text-center">
-                        <img id="hero-image" src="images/blok.jpg" alt="Поэт" class="img-fluid w-100" style="max-height: 400px; object-fit: cover; filter: grayscale(100%);">
+                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <!-- Уменьшили ширину до 350px, чтобы вертикальные фото не были гигантскими -->
+                    <div class="shadow-lg rounded overflow-hidden" style="max-width: 350px; width: 100%;">
+                        <img id="hero-image" src="images/blok.jpg" alt="Поэт" class="img-fluid w-100">
                     </div>
                 </div>
             </div>
@@ -64,8 +61,199 @@
             </div>
         </section>
 
-        <!-- Разделы энциклопедии -->
+                <!-- СЕКЦИЯ: СПРАВКА ОБ ЭПОХЕ -->
         <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="card shadow-sm border-0" style="background-color: #fdfcf9;">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="h3 mb-4 text-center" style="font-family: 'Playfair Display', serif;">Что такое Серебряный век?</h2>
+                            <p class="mb-3" style="font-size: 1.05rem; line-height: 1.7;">
+                                <strong>Серебряный век</strong> — это условное название периода в истории русской культуры (конец XIX — начало XX века), который пришел на смену «Золотому веку» Пушкина и Лермонтова. Это время невероятного расцвета поэзии, философии и искусства.
+                            </p>
+                            <p class="mb-3" style="font-size: 1.05rem; line-height: 1.7;">
+                                Поэты этого времени не просто писали стихи — они искали новые формы, экспериментировали со словом, мистикой и образами. Эпоха подарила миру таких гениев, как Александр Блок, Анна Ахматова, Сергей Есенин, Владимир Маяковский, Марина Цветаева и многих других.
+                            </p>
+                            
+                            <!-- Небольшие тезисы-факты -->
+                            <div class="row g-3 mt-4">
+                                <div class="col-12 col-md-4">
+                                    <div class="p-3 border rounded h-100" style="background-color: #f4f1ea; border-color: #d8d0c5 !important;">
+                                        <h3 class="h6 fw-bold mb-2" style="color: #4a3424;">Временные рамки</h3>
+                                        <p class="small text-muted mb-0">Обычно отсчитывается с 1890-х годов и завершается в начале 1920-х.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="p-3 border rounded h-100" style="background-color: #f4f1ea; border-color: #d8d0c5 !important;">
+                                        <h3 class="h6 fw-bold mb-2" style="color: #4a3424;">Главные течения</h3>
+                                        <p class="small text-muted mb-0">Символизм, акмеизм, футуризм, имажинизм и другие.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="p-3 border rounded h-100" style="background-color: #f4f1ea; border-color: #d8d0c5 !important;">
+                                        <h3 class="h6 fw-bold mb-2" style="color: #4a3424;">Суть эпохи</h3>
+                                        <p class="small text-muted mb-0">Поиск новых идеалов, мистицизм, культ красоты и трагическое предчувствие перемен.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- СЕКЦИЯ: ЛИТЕРАТУРНЫЕ НАПРАВЛЕНИЯ -->
+        <section class="container my-5" id="directions">
+            <h2 class="text-center mb-4">Литературные направления</h2>
+            <ul class="nav nav-tabs flex-wrap justify-content-center mb-4" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="sym-tab" data-bs-toggle="tab" data-bs-target="#sym" type="button" role="tab">Символизм</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="acme-tab" data-bs-toggle="tab" data-bs-target="#acme" type="button" role="tab">Акмеизм</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fut-tab" data-bs-toggle="tab" data-bs-target="#fut" type="button" role="tab">Футуризм</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="imag-tab" data-bs-toggle="tab" data-bs-target="#imag" type="button" role="tab">Имажинизм</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="ego-tab" data-bs-toggle="tab" data-bs-target="#ego" type="button" role="tab">Эгофутуризм</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <!-- Символизм -->
+                <div class="tab-pane fade show active" id="sym" role="tabpanel">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <p>Ключевые черты: мистицизм, использование символов, музыкальность стиха.</p>
+                            <p class="mb-0"><strong>Представители:</strong> <a href="blok.html">Александр Блок</a>, <a href="belyi.html">Андрей Белый</a>, <a href="bryusov.html">Валерий Брюсов</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Акмеизм -->
+                <div class="tab-pane fade" id="acme" role="tabpanel">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <p>Ключевые черты: ясность, предметность, отказ от мистики.</p>
+                            <p class="mb-0"><strong>Представители:</strong> <a href="ahmatova.html">Анна Ахматова</a>, Николай Гумилев, Осип Мандельштам.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Футуризм -->
+                <div class="tab-pane fade" id="fut" role="tabpanel">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <p>Ключевые черты: эпатаж, словотворчество, отказ от классических форм.</p>
+                            <p class="mb-0"><strong>Представители:</strong> <a href="mayakovsky.html">Владимир Маяковский</a>, Велимир Хлебников.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Имажинизм -->
+                <div class="tab-pane fade" id="imag" role="tabpanel">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <p>Ключевые черты: главенство образа (метафоры), эпатаж, попытка создать новый язык.</p>
+                            <p class="mb-0"><strong>Представители:</strong> <a href="esenin.html">Сергей Есенин</a>, <a href="mariengof.html">Анатолий Мариенгоф</a>, <a href="shershenevich.html">Вадим Шершеневич</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Эгофутуризм -->
+                <div class="tab-pane fade" id="ego" role="tabpanel">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <p>Ключевые черты: культ личности, эстетизм, создание новых слов, поиск «неизведанного».</p>
+                            <p class="mb-0"><strong>Представители:</strong> Игорь Северянин, Иван Игнатьев.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- СЕКЦИЯ: ХРОНОЛОГИЯ -->
+        <section class="container my-5" id="timeline">
+            <h2 class="text-center mb-4">Хронология Серебряного века</h2>
+            <div class="accordion shadow-sm" id="timelineAccordion">
+                <!-- 1890-е -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button era-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                            <strong>1890-е годы — Зарождение символизма</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#timelineAccordion">
+                        <div class="accordion-body">
+                            <p>Период, когда на смену реализму приходит новое мистическое мировоззрение. Поэты отказываются от точных описаний, ища скрытый смысл в символах.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><strong>1892:</strong> Выход сборника Дмитрия Мережковского «Символы» (по некоторым оценкам, именно с него начинается отсчет).</li>
+                                <li class="mb-2"><strong>1894–1895:</strong> Валерий Брюсов выпускает три сборника «Русские символисты», вызвавших бурную полемику в обществе.</li>
+                                <li class="mb-2"><strong>1895:</strong> Знакомство Валерия Брюсова и Константина Бальмонта, формирование первого кружка символистов.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1900-е -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed era-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            <strong>1900-е годы — Рассвет символизма</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+                        <div class="accordion-body">
+                            <p>Символизм становится главенствующим течением, разделяясь на «старших» и «младших» символистов.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><strong>1901:</strong> Знакомство Блока с Любовью Менделеевой (будущей женой), начало работы над «Стихами о Прекрасной Даме».</li>
+                                <li class="mb-2"><strong>1904:</strong> Выход сборника Блока «Стихи о Прекрасной Даме».</li>
+                                <li class="mb-2"><strong>1904–1909:</strong> Деятельность журнала «Весы» (главный печатный орган символистов).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1910-е -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed era-bg-mid" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            <strong>1910-е годы — Расцвет акмеизма и футуризма</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+                        <div class="accordion-body">
+                            <p>Кризис символизма. На литературную арену выходят новые яркие течения — акмеизм (возвращение к предметности) и футуризм (эпатаж и словотворчество).</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><strong>1910:</strong> Создание «Цеха поэтов» (Гумилев, Ахматова, Мандельштам).</li>
+                                <li class="mb-2"><strong>1912:</strong> Выход первого сборника Анны Ахматовой «Вечер».</li>
+                                <li class="mb-2"><strong>1912:</strong> Публикация манифеста футуристов «Пощёчина общественному вкусу».</li>
+                                <li class="mb-2"><strong>1915:</strong> Знакомство Есенина и Блока.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1920-е -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed era-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            <strong>1920-е годы — Закат эпохи</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+                        <div class="accordion-body">
+                            <p>Время трагических перемен, эмиграции и гибели многих поэтов. Завершение периода Серебряного века.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><strong>1921:</strong> Гибель Николая Гумилева (расстрелян) и смерть Александра Блока.</li>
+                                <li class="mb-2"><strong>1925:</strong> Трагическая гибель Сергея Есенина в гостинице «Англетер».</li>
+                                <li class="mb-2"><strong>1928:</strong> Разгром имажинизма в советской печати.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Разделы энциклопедии -->
+        <!-- <section class="container my-5">
             <h2 class="text-center mb-4">Разделы энциклопедии</h2>
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
@@ -123,15 +311,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
-        <!-- ПОДВАЛ -->
+      <!-- ПОДВАЛ -->
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row g-4">
                 
-                <!-- Колонка 1: Логотип и слоган (4 колонки) -->
+                <!-- Колонка 1: Логотип и слоган -->
                 <div class="col-12 col-lg-4">
                     <div class="d-flex align-items-center mb-3">
                         <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
@@ -141,52 +329,62 @@
                         </div>
                     </div>
                     <p class="text-white-50 small mb-0">
-                        Проект, посвященный литературному наследию рубежа XIX–XX веков.
+                        Проект, посвященный литературному наследию рубежа XIX–XX веков. Читайте, изучайте и вдохновляйтесь.
                     </p>
                 </div>
 
-                <!-- Колонка 2: Разделы (2 колонки) -->
-                <div class="col-6 col-md-3 col-lg-2">
+                <!-- Колонка 2: Все разделы -->
+                <div class="col-6 col-md-4 col-lg-4">
                     <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Разделы</h5>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="index.html">Главная</a></li>
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="alley_of_poets.html">Аллея поэтов</a></li>
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="poems.html">Стихи</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="quotes.html">Цитаты</a></li>
-                    </ul>
-                </div>
-
-                <!-- Колонка 3: Эпоха (2 колонки) -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Эпоха</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="directions.html">Направления</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="timeline.html">Хронология</a></li>
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="relationships.html">Связи поэтов</a></li>
-                    </ul>
-                </div>
-
-                <!-- Колонка 4: Проект (2 колонки) -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Проект</h5>
-                    <ul class="list-unstyled">
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="about_us.html">О проекте</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="subscribe.html">Подписка</a></li>
                     </ul>
                 </div>
 
-                <!-- Колонка 5: Контакты (2 колонки, справа) -->
-                <div class="col-6 col-md-3 col-lg-2">
+                <!-- Колонка 3: Контакты (Справа) -->
+                <div class="col-6 col-md-4 col-lg-4">
                     <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Контакты</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2 text-white-50 small">
-                            <strong>Редактор:</strong><br>М. Хазова
-                        </li>
-                        <li class="mb-2 text-white-50 small">
+                        <li class="mb-3 text-white-50 small">
                             <strong>Email:</strong><br>
                             <a href="mailto:editor@silver-age.ru" class="text-white-50 text-decoration-none">editor@silver-age.ru</a>
                         </li>
                         <li class="mb-2 text-white-50 small">
-                            <strong>Тел:</strong><br>+7 (999) 123-45-67
+                            <strong>Мы в соцсетях:</strong>
+                            <div class="d-flex gap-3 mt-2 align-items-center">
+                                
+                                <!-- ВКонтакте -->
+                                <a href="#" class="social-icon" title="ВКонтакте">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="social-img" width="32" height="32">
+                                        <rect width="48" height="48" fill="#0077FF" rx="10"/>
+                                        <path fill="#ffffff" d="M24.8 34c-8.8 0-13.8-6-14-16.1h4.4c.1 7.4 3.5 10.6 6.2 11.2V17.9h4.1v6.4c2.6-.3 5.4-3.3 6.3-6.4h4.1c-.7 3.9-3.6 6.9-5.7 8.1 2.1 1 5.4 3.6 6.7 8h-4.5c-1-3.1-3.5-5.5-6.9-5.9v5.9h-.7z"/>
+                                    </svg>
+                                </a>
+
+                                <!-- Telegram -->
+                                <a href="#" class="social-icon" title="Telegram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="social-img" width="30" height="30">
+                                        <defs>
+                                            <linearGradient id="tg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#2AABEE" />
+                                                <stop offset="100%" stop-color="#229ED9" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="24" cy="24" r="24" fill="url(#tg-grad)"/>
+                                        <path fill="#ffffff" d="M34.1 14.5l-3 15.1c-.2 1-.8 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.2.2-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2l-10.6 6.7-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.4 1z"/>
+                                    </svg>
+                                </a>
+
+                                <!-- МАКС -->
+                                <a href="#" class="social-icon" title="МАКС">
+                                    <img src="images/max-icon.png" alt="МАКС" class="social-img">
+                                </a>
+
+                            </div>
                         </li>
                     </ul>
                 </div>

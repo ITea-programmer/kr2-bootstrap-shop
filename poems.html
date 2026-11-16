@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-light">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top" style="z-index: 1020;">        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top" style="z-index: 1020;">
+        <div class="container">
             <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
                 <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
                 <div class="d-flex flex-column">
@@ -24,11 +25,8 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="alley_of_poets.html">Аллея поэтов</a></li>
-                    <li class="nav-item"><a class="nav-link" href="directions.html">Направления</a></li>
-                    <li class="nav-item"><a class="nav-link" href="timeline.html">Хронология</a></li>
                     <li class="nav-item"><a class="nav-link active" href="poems.html">Стихи</a></li>
                     <li class="nav-item"><a class="nav-link" href="relationships.html">Связи</a></li>
-                    <li class="nav-item"><a class="nav-link" href="quotes.html">Цитаты</a></li>
                     <li class="nav-item"><a class="nav-link" href="subscribe.html">Подписка</a></li>
                     <li class="nav-item"><a class="nav-link" href="about_us.html">О проекте</a></li>
                 </ul>
@@ -43,133 +41,279 @@
                 <li class="breadcrumb-item active" aria-current="page">Стихи</li>
             </ol>
         </nav>
+        
         <h1 class="h2 mb-4">Библиотека произведений</h1>
+        <p class="text-muted mb-5">Избранные стихотворения поэтов Серебряного века. Нажмите «Читать полностью», чтобы увидеть произведение целиком.</p>
+
         <div class="row g-4">
+            
+            <!-- Стих 1: Анна Ахматова (ПОЛНЫЙ ТЕКСТ) -->
             <div class="col-12 col-lg-6">
                 <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-success mb-2">Акмеизм</span>
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success mb-2 align-self-start">Акмеизм</span>
                         <h2 class="h5 card-title">«Сжала руки под темной вуалью...»</h2>
-                        <p class="text-muted mb-2">Анна Ахматова, 1911</p>
-                        <p class="card-text fst-italic">Сжала руки под темной вуалью...<br>«Отчего ты сегодня бледна?»<br>— Оттого, что я терпкой печалью<br>Напоила его допьяна.</p>
-                        <a href="ahmatova.html" class="btn btn-sm btn-outline-primary mt-3">К биографии</a>
+                        <p class="text-muted mb-3">Анна Ахматова, 1911</p>
+                        
+                        <p class="card-text fst-italic mb-2">
+                            Сжала руки под темной вуалью...<br>
+                            «Отчего ты сегодня бледна?»<br>
+                            — Оттого, что я терпкой печалью<br>
+                            Напоила его допьяна.
+                        </p>
+                        
+                        <div class="collapse" id="poem1">
+                            <p class="card-text fst-italic mb-2">
+                                Сжала руки под темной вуалью...<br>
+                                «Отчего ты сегодня бледна?»<br>
+                                — Оттого, что я терпкой печалью<br>
+                                Напоила его допьяна.<br><br>
+                                Задыхаясь, я крикнула: «Шутка<br>
+                                Всё, что было. Уйдешь, я умру».<br>
+                                Улыбнулся спокойно и жутко<br>
+                                И сказал мне: «Не стой на ветру».
+                            </p>
+                        </div>
+                        
+                        <div class="d-flex gap-2 mt-auto pt-3">
+                            <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#poem1" aria-expanded="false" aria-controls="poem1">
+                                Читать полностью
+                            </button>
+                            <a href="ahmatova.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Стих 2: Александр Блок (ПОЛНЫЙ ТЕКСТ) -->
             <div class="col-12 col-lg-6">
                 <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-warning text-dark mb-2">Символизм</span>
-                        <h2 class="h5 card-title">«Ночь, улица, фонарь, аптека...»</h2>
-                        <p class="text-muted mb-2">Александр Блок, 1912</p>
-                        <p class="card-text fst-italic">Ночь, улица, фонарь, аптека,<br>Бессмысленный и тусклый свет.<br>Живи еще хоть четверть века —<br>Все будет так. Исхода нет.</p>
-                        <a href="blok.html" class="btn btn-sm btn-outline-primary mt-3">К биографии</a>
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">Символизм</span>
+                        <h2 class="h5 card-title">«О доблестях, о подвигах, о славе...»</h2>
+                        <p class="text-muted mb-3">Александр Блок, 1908</p>
+                        
+                        <p class="card-text fst-italic mb-2">
+                            О доблестях, о подвигах, о славе<br>
+                            Я забывал на горестной земле,<br>
+                            Когда твое лицо в простой оправе<br>
+                            Передо мной сияло на столе.
+                        </p>
+                        
+                        <div class="collapse" id="poem2">
+                            <p class="card-text fst-italic mb-2">
+                                О доблестях, о подвигах, о славе<br>
+                                Я забывал на горестной земле,<br>
+                                Когда твое лицо в простой оправе<br>
+                                Передо мной сияло на столе.<br><br>
+                                Но час настал, и ты ушла из дому.<br>
+                                Я бросил в ночь заветное кольцо.<br>
+                                Ты отдала свою судьбу другому,<br>
+                                И я забыл прекрасное лицо.<br><br>
+                                Летели дни, крутясь проклятым роем...<br>
+                                Вино и страсть терзали жизнь мою...<br>
+                                И вспомнил я тебя пред аналоем,<br>
+                                И звал тебя, как молодость свою...<br><br>
+                                Я звал тебя, но ты не оглянулась,<br>
+                                Я слезы лил, но ты не снизошла.<br>
+                                Ты в синий плащ печально завернулась,<br>
+                                В сырую ночь ты из дому ушла.<br><br>
+                                Не знаю, где приют своей гордыне<br>
+                                Ты, милая, ты, нежная, нашла...<br>
+                                Я крепко сплю, мне снится плащ твой синий,<br>
+                                В котором ты в сырую ночь ушла...<br><br>
+                                Уж не мечтать о нежности, о славе,<br>
+                                Всё миновалось, молодость прошла!<br>
+                                Твое лицо в его простой оправе<br>
+                                Своей рукой убрал я со стола.
+                            </p>
+                        </div>
+                        
+                        <div class="d-flex gap-2 mt-auto pt-3">
+                            <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#poem2" aria-expanded="false" aria-controls="poem2">
+                                Читать полностью
+                            </button>
+                            <a href="blok.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                        </div>
                     </div>
                 </div>
             </div>
-                        <!-- Стих 3: Сергей Есенин -->
+
+            <!-- Стих 3: Сергей Есенин (ПОЛНЫЙ ТЕКСТ) -->
             <div class="col-12 col-lg-6">
                 <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-danger mb-2">Имажинизм</span>
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-danger mb-2 align-self-start">Имажинизм</span>
                         <h2 class="h5 card-title">«Не жалею, не зову, не плачу...»</h2>
-                        <p class="text-muted mb-2">Сергей Есенин, 1921</p>
-                        <p class="card-text fst-italic">
+                        <p class="text-muted mb-3">Сергей Есенин, 1921</p>
+                        
+                        <p class="card-text fst-italic mb-2">
                             Не жалею, не зову, не плачу,<br>
                             Все пройдет, как с белых яблонь дым.<br>
                             Увяданья золотом охваченный,<br>
                             Я не буду больше молодым.
                         </p>
-                        <a href="esenin.html" class="btn btn-sm btn-outline-primary mt-3">К биографии</a>
+                        
+                        <div class="collapse" id="poem3">
+                            <p class="card-text fst-italic mb-2">
+                                Не жалею, не зову, не плачу,<br>
+                                Все пройдет, как с белых яблонь дым.<br>
+                                Увяданья золотом охваченный,<br>
+                                Я не буду больше молодым.<br><br>
+                                Ты теперь не так уж будешь биться,<br>
+                                Сердце, тронутое холодком,<br>
+                                И страна березового ситца<br>
+                                Не заманит шляться босиком.<br><br>
+                                Дух бродяжий, ты все реже, реже<br>
+                                Расшевеливаешь пламень уст.<br>
+                                О, моя утраченная свежесть,<br>
+                                Буйство глаз и половодье чувств.<br><br>
+                                Я теперь скупее стал в желаньях,<br>
+                                Жизнь моя? иль ты приснилась мне?<br>
+                                Словно я весенней гулкой ранью<br>
+                                Проскакал на розовом коне.<br><br>
+                                Все мы, все мы в этом мире тленны,<br>
+                                Тихо льется с кленов листьев медь...<br>
+                                Будь же ты вовек благословенно,<br>
+                                Что пришло процвесть и умереть.
+                            </p>
+                        </div>
+                        
+                        <div class="d-flex gap-2 mt-auto pt-3">
+                            <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#poem3" aria-expanded="false" aria-controls="poem3">
+                                Читать полностью
+                            </button>
+                            <a href="esenin.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Стих 4: Марина Цветаева -->
+            <!-- Стих 4: Марина Цветаева (ПОЛНЫЙ ТЕКСТ) -->
             <div class="col-12 col-lg-6">
                 <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-secondary mb-2">Вне течений</span>
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2 align-self-start">Вне течений</span>
                         <h2 class="h5 card-title">«Мне нравится, что вы больны не мной...»</h2>
-                        <p class="text-muted mb-2">Марина Цветаева, 1915</p>
-                        <p class="card-text fst-italic">
-                            Мне нравится, что вы больны не мной,<br>
-                            Мне нравится, что я больна не вами,<br>
+                        <p class="text-muted mb-3">Марина Цветаева, 1915</p>
+                        
+                        <p class="card-text fst-italic mb-2">
+                            Мне нравится, что Вы больны не мной,<br>
+                            Мне нравится, что я больна не Вами,<br>
                             Что никогда тяжелый шар земной<br>
                             Не уплывет под нашими ногами.
                         </p>
-                        <a href="cvetaeva.html" class="btn btn-sm btn-outline-primary mt-3">К биографии</a>
+                        
+                        <div class="collapse" id="poem4">
+                            <p class="card-text fst-italic mb-2">
+                                Мне нравится, что Вы больны не мной,<br>
+                                Мне нравится, что я больна не Вами,<br>
+                                Что никогда тяжелый шар земной<br>
+                                Не уплывет под нашими ногами.<br><br>
+                                Мне нравится, что можно быть смешной —<br>
+                                Распущенной — и не играть словами,<br>
+                                И не краснеть удушливой волной,<br>
+                                Слегка соприкоснувшись рукавами.<br><br>
+                                Мне нравится еще, что Вы при мне<br>
+                                Спокойно обнимаете другую,<br>
+                                Не прочите мне в адовом огне<br>
+                                Гореть за то, что я не Вас целую.<br><br>
+                                Что имя нежное мое, мой нежный, не<br>
+                                Упоминаете ни днем ни ночью — всуе…<br>
+                                Что никогда в церковной тишине<br>
+                                Не пропоют над нами: аллилуйя!<br><br>
+                                Спасибо Вам и сердцем и рукой<br>
+                                За то, что Вы меня — не зная сами! —<br>
+                                Так любите: за мой ночной покой,<br>
+                                За редкость встреч закатными часами,<br><br>
+                                За наши не-гулянья под луной,<br>
+                                За солнце не у нас над головами,<br>
+                                За то, что Вы больны — увы! — не мной,<br>
+                                За то, что я больна — увы! — не Вами.
+                            </p>
+                        </div>
+                        
+                        <div class="d-flex gap-2 mt-auto pt-3">
+                            <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#poem4" aria-expanded="false" aria-controls="poem4">
+                                Читать полностью
+                            </button>
+                            <a href="cvetaeva.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Стих 5: Владимир Маяковский -->
+            <!-- Стих 5: Владимир Маяковский (ПОЛНЫЙ ТЕКСТ) -->
             <div class="col-12 col-lg-6">
                 <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-danger mb-2">Футуризм</span>
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-danger mb-2 align-self-start">Футуризм</span>
                         <h2 class="h5 card-title">«Послушайте!»</h2>
-                        <p class="text-muted mb-2">Владимир Маяковский, 1914</p>
-                        <p class="card-text fst-italic">
+                        <p class="text-muted mb-3">Владимир Маяковский, 1914</p>
+                        
+                        <p class="card-text fst-italic mb-2">
                             Послушайте!<br>
                             Ведь, если звезды зажигают —<br>
                             значит — это кому-нибудь нужно?<br>
                             Значит — кто-то хочет, чтобы они были?
                         </p>
-                        <a href="mayakovskiy.html" class="btn btn-sm btn-outline-primary mt-3">К биографии</a>
+                        
+                        <div class="collapse" id="poem5">
+                            <p class="card-text fst-italic mb-2">
+                                Послушайте!<br>
+                                Ведь, если звезды зажигают —<br>
+                                значит — это кому-нибудь нужно?<br>
+                                Значит — кто-то хочет, чтобы они были?<br><br>
+
+                                Значит — кто-то называет эти плево́чки жемчужиной?<br>
+                                И, надрываясь<br>
+                                в метелях полу́денной пыли,<br>
+                                врывается к богу,<br>
+                                боится, что опоздал,<br>
+                                плачет,<br>
+                                целует ему жилистую руку,<br>
+                                просит —<br>
+                                чтоб обязательно была звезда! —<br>
+                                клянется —<br>
+                                не перенесет эту беззвездную муку!<br><br>
+
+                                А после<br>
+                                ходит тревожный,<br>
+                                но спокойный наружно.<br>
+                                Говорит кому-то:<br>
+                                «Ведь теперь тебе ничего?<br>
+                                Не страшно?<br>
+                                Да?!»<br><br>
+
+                                Послушайте!<br>
+                                Ведь, если звезды<br>
+                                зажигают —<br>
+                                значит — это кому-нибудь нужно?<br>
+                                Значит — это необходимо,<br>
+                                чтобы каждый вечер<br>
+                                над крышами<br>
+                                загоралась хоть одна звезда?!
+                            </p>
+                        </div>
+                        
+                        <div class="d-flex gap-2 mt-auto pt-3">
+                            <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#poem5" aria-expanded="false" aria-controls="poem5">
+                                Читать полностью
+                            </button>
+                            <a href="mayakovsky.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="mt-4">
-            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Нашли опечатку в стихах? Сообщить о правке</button>
+
         </div>
     </main>
 
-    <!-- МОДАЛЬНОЕ ОКНО "РЕДАКТОРУ САЙТА" -->
-    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title h5" id="orderModalLabel">Редактору сайта</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-muted small mb-3">Нашли опечатку или неточность в тексте? Сообщите нам, и мы обязательно всё исправим.</p>
-                    <form>
-                        <div class="mb-3">
-                            <label for="modal-name" class="form-label">Ваше имя</label>
-                            <input id="modal-name" type="text" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="modal-email" class="form-label">E-mail для связи</label>
-                            <input id="modal-email" type="email" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="modal-text" class="form-label">Что нужно исправить?</label>
-                            <textarea id="modal-text" class="form-control" rows="3" placeholder="Опишите ошибку или предложение..." required></textarea>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input id="modal-agree" class="form-check-input" type="checkbox" required>
-                            <label class="form-check-label" for="modal-agree">Согласен на обработку данных</label>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
-                    <button type="button" class="btn btn-primary">Отправить</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <!-- ПОДВАЛ -->
+    <!-- ПОДВАЛ -->
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row g-4">
                 
-                <!-- Колонка 1: Логотип и слоган (4 колонки) -->
                 <div class="col-12 col-lg-4">
                     <div class="d-flex align-items-center mb-3">
                         <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
@@ -179,59 +323,59 @@
                         </div>
                     </div>
                     <p class="text-white-50 small mb-0">
-                        Проект, посвященный литературному наследию рубежа XIX–XX веков.
+                        Проект, посвященный литературному наследию рубежа XIX–XX веков. Читайте, изучайте и вдохновляйтесь.
                     </p>
                 </div>
 
-                <!-- Колонка 2: Разделы (2 колонки) -->
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-4 col-lg-4">
                     <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Разделы</h5>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a class="text-white text-decoration-none small" href="index.html">Главная</a></li>
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="alley_of_poets.html">Аллея поэтов</a></li>
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="poems.html">Стихи</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="quotes.html">Цитаты</a></li>
-                    </ul>
-                </div>
-
-                <!-- Колонка 3: Эпоха (2 колонки) -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Эпоха</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="directions.html">Направления</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="timeline.html">Хронология</a></li>
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="relationships.html">Связи поэтов</a></li>
-                    </ul>
-                </div>
-
-                <!-- Колонка 4: Проект (2 колонки) -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Проект</h5>
-                    <ul class="list-unstyled">
                         <li class="mb-2"><a class="text-white text-decoration-none small" href="about_us.html">О проекте</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none small" href="subscribe.html">Подписка</a></li>
                     </ul>
                 </div>
 
-                <!-- Колонка 5: Контакты (2 колонки, справа) -->
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-4 col-lg-4">
                     <h5 class="h6 text-uppercase mb-3" style="color: #c9a86a; letter-spacing: 1px;">Контакты</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2 text-white-50 small">
-                            <strong>Редактор:</strong><br>М. Хазова
-                        </li>
-                        <li class="mb-2 text-white-50 small">
+                        <li class="mb-3 text-white-50 small">
                             <strong>Email:</strong><br>
                             <a href="mailto:editor@silver-age.ru" class="text-white-50 text-decoration-none">editor@silver-age.ru</a>
                         </li>
                         <li class="mb-2 text-white-50 small">
-                            <strong>Тел:</strong><br>+7 (999) 123-45-67
+                            <strong>Мы в соцсетях:</strong>
+                            <div class="d-flex gap-3 mt-2 align-items-center">
+                                <a href="#" class="social-icon" title="ВКонтакте">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="social-img" width="32" height="32">
+                                        <rect width="48" height="48" fill="#0077FF" rx="10"/>
+                                        <path fill="#ffffff" d="M24.8 34c-8.8 0-13.8-6-14-16.1h4.4c.1 7.4 3.5 10.6 6.2 11.2V17.9h4.1v6.4c2.6-.3 5.4-3.3 6.3-6.4h4.1c-.7 3.9-3.6 6.9-5.7 8.1 2.1 1 5.4 3.6 6.7 8h-4.5c-1-3.1-3.5-5.5-6.9-5.9v5.9h-.7z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon" title="Telegram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="social-img" width="30" height="30">
+                                        <defs>
+                                            <linearGradient id="tg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#2AABEE" />
+                                                <stop offset="100%" stop-color="#229ED9" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="24" cy="24" r="24" fill="url(#tg-grad)"/>
+                                        <path fill="#ffffff" d="M34.1 14.5l-3 15.1c-.2 1-.8 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.2.2-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2l-10.6 6.7-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.4 1z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon" title="МАКС">
+                                    <img src="images/max-icon.png" alt="МАКС" class="social-img">
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
                 
             </div>
             
-            <!-- Нижняя полоса с копирайтом -->
             <hr class="border-secondary mt-4 mb-3">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
