@@ -87,6 +87,94 @@ document.addEventListener('click', function(e) {
         });
     }
 });
-
+function highlightText(text, query) { if (!query) return text; 
+    // Экранируем спецсимволы в запросе, чтобы поиск работал с точками, скобками и т.д. 
+const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[$$\\]/g, '\\$&')})`, 'gi');    return text.replace(regex, '<mark class="search-highlight">$1</mark>'); 
+} // Функция очистки старых подсветок 
+function clearHighlights(container) { 
+    const marks = container.querySelectorAll('mark.search-highlight'); 
+    marks.forEach(mark => { 
+        // Заменяем тег <mark> обратно на обычный текст 
+        const parent = mark.parentNode; 
+        parent.replaceChild(document.createTextNode(mark.textContent), mark)
+         parent.normalize(); 
+    }); 
+}
 // Запуск при загрузке страницы
 document.addEventListener('DOMContentLoaded', renderPoemOfTheDay);
+
+// УМНЫЙ ЛОКАЛЬНЫЙ ПОИСК ПО СТРАНИЦЕ
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('site-search');
+    if (!searchInput) return;
+
+    // Находим все крупные смысловые блоки на странице по их заголовкам
+    const sections = document.querySelectorAll('section, .accordion-item, .tab-pane');
+
+    searchInput.addEventListener('input', function(e) {
+    const searchText = e.target.value.toLowerCase().trim();
+
+    // Очищаем подсветку и состояние блоков, если поле пустое
+    if (searchText === '') {
+        sections.forEach(section => {
+            section.style.display = '';
+            section.style.boxShadow = '';
+            clearHighlights(section); // Очищаем <mark> во всем разделе
+            // Восстанавливаем состояние аккордеонов и табов при сбросе поиска
+            if (section.classList.contains('accordion-collapse') && section.classList.contains('show')) {
+                section.style.display = '';
+            }
+        });
+        return;
+    }
+
+    sections.forEach(section => {
+        let isSectionMatched = false;
+
+        // 1. Сначала очищаем старые подсветки в текущем блоке
+        clearHighlights(section);
+
+        // 2. Проверяем заголовок (h2, h3, h4)
+        const titles = section.querySelectorAll('h2, h3, h4'); 
+        titles.forEach((title) => { 
+            const titleText = title.textContent.toLowerCase(); 
+            if (titleText.includes(searchText)) { isSectionMatched = true; // Раздел найден 
+            title.innerHTML = highlightText(title.textContent, searchText); // Подсветка
+            } 
+        });
+
+        // 3. Проверяем текстовое содержимое (ищем только в параграфах и списках, чтобы не сломать кнопки)
+        const textNodes = section.querySelectorAll('p, li, .accordion-body, .card-body');
+        
+        textNodes.forEach(node => {
+            const nodeText = node.textContent.toLowerCase();
+            if (nodeText.includes(searchText)) {
+                isSectionMatched = true;
+                node.innerHTML = highlightText(node.textContent, searchText);
+            }
+        });
+
+        // 4. Логика отображения блока
+        if (isSectionMatched) {
+            section.style.display = '';
+            section.style.boxShadow = '0 0 10px rgba(201, 168, 106, 0.4)';
+
+            // Автоматическое открытие табов и аккордеонов (оставьте эту логику из прошлого ответа)
+            if (section.classList.contains('tab-pane')) {
+                const trigger = document.querySelector(`[data-bs-target="#${section.id}"]`);
+                if (trigger && !trigger.classList.contains('active')) {
+                    const tab = new bootstrap.Tab(trigger);
+                    tab.show();
+                }
+            }
+            if (section.classList.contains('accordion-collapse') && !section.classList.contains('show')) {
+                const accordion = new bootstrap.Collapse(section, { toggle: true });
+            }
+        } else {
+            section.style.display = 'none';
+            section.style.boxShadow = '';
+        }
+    });
+});
+
+});

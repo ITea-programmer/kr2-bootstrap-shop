@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серебряный век – Личный кабинет</title>
+    <link rel="icon" type="image/png" href="images/logo-2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css"> <!-- Ваш кастомный стиль -->
+</head>
+<body class="bg-light">
+    
+    <!-- НАВИГАЦИЯ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top" style="z-index: 1020;">        
+        <div class="container">
+            <!-- Логотип и слоган -->
+            <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
+                <img src="images/logo-2.png" alt="Логотип" class="logo-brand me-3">
+                <div class="d-flex flex-column">
+                    <span class="brand-title">Серебряный век</span>
+                    <span class="brand-slogan">Энциклопедия поэзии</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="alley_of_poets.html">Аллея поэтов</a></li>
+                    <li class="nav-item"><a class="nav-link" href="poems.html">Стихи</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="lk.html">Личный кабинет</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">О проекте</a></li>
+                </ul>
+                
+                <!-- Поле локального поиска -->
+                <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search" onsubmit="return false;">
+                    <input type="text" id="site-search" class="form-control form-control-sm" placeholder="Поиск по странице..." style="min-width: 200px; background-color: #fdfcf9; border-color: #c4b8a8;">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Герой-блок с приветствием -->
+        <section class="container my-5">
+            <h2 class="display-6 text-center mb-4">Ваш личный кабинет</h2>
+            <p class="lead text-center text-muted">Здесь собраны стихи, которые вы отметили как любимые.</p>
+        </section>
+
+        <!-- Секция избранных произведений -->
+        <section class="container my-5">
+            <h3 class="mb-4">Избранные стихотворения</h3>
+            
+            <!-- Контейнер, куда JavaScript выведет список стихов -->
+            <div id="favorites-list" class="row g-3"></div>
+        </section>
+    </main>
+
+    <!-- Кнопка "Наверх" с пером -->
+    <a href="#" id="scrollToTopBtn" class="scroll-top-btn" title="Наверх">
+        <img alt="Наверх" class="feather-img" id="01a1ed89-9403-7127-8916-2fc72b2ba704">
+    </a>
+
+    <!-- Подключаем скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lk.js"></script> <!-- Новый скрипт для этой страницы -->
+</body>
+</html>
