@@ -55,7 +55,7 @@
             
             <!-- Стих 1: Анна Ахматова -->
             <div class="col-12 col-lg-6">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm" data-id="ahmatova-szala">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex align-items-center mb-3">
                             <img src="images/ahmatova.jpg" alt="Анна Ахматова" class="rounded-circle me-3 shadow-sm" style="width: 50px; height: 50px; object-fit: cover; filter: sepia(0.8);">
@@ -92,14 +92,16 @@
                                 <span class="btn-text">Читать полностью</span>
                             </button>
                             <a href="ahmatova.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                            <button onclick="toggleFavorite('ahmatova-szala');" class="btn btn-warning btn-sm me-2" id="favorite-btn-ahmatova-szala"><img src="images/heart.png" alt="Избранное" style="width: 1rem; margin-right: .5rem;">В избранное </button> <span id="status-message-ahmatova-szala" style="font-size: .8rem; color: #c9a86a; display: none;">Добавлено!</span>
                         </div>
+                        
                     </div>
                 </div>
             </div>
 
             <!-- Стих 2: Александр Блок -->
             <div class="col-12 col-lg-6">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm" data id="blok-o-doblestyax">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex align-items-center mb-3">
                             <img src="images/blok.jpg" alt="Александр Блок" class="rounded-circle me-3 shadow-sm" style="width: 50px; height: 50px; object-fit: cover; filter: sepia(0.8);">
@@ -152,6 +154,7 @@
                                 <span class="btn-text">Читать полностью</span>
                             </button>
                             <a href="blok.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                            <button onclick="toggleFavorite('blok-o-doblestyax');" class="btn btn-warning btn-sm me-2" id="favorite-btn-blok-o-doblestyax"><img src="images/heart.png" alt="Избранное" style="width: 1rem; margin-right: .5rem;">В избранное </button> <span id="status-message-blok-o-doblestyax" style="font-size: .8rem; color: #c9a86a; display: none;">Добавлено!</span>
                         </div>
                     </div>
                 </div>
@@ -159,7 +162,7 @@
 
             <!-- Стих 3: Сергей Есенин -->
             <div class="col-12 col-lg-6">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm" id="esenin-ne-zhaleu">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex align-items-center mb-3">
                                 <img src="images/esenin.jpg" alt="Сергей Есенин" class="rounded-circle me-3 shadow-sm" style="width: 50px; height: 50px; object-fit: cover; object-position: 35% 15%; filter: sepia(0.8);">                            <div>
@@ -207,6 +210,8 @@
                                 <span class="btn-text">Читать полностью</span>
                             </button>
                             <a href="esenin.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                            <button onclick="toggleFavorite('esenin-ne-zhaleu');" class="btn btn-warning btn-sm me-2" id="favorite-btn-esenin-ne-zhaleu"><img src="images/heart.png" alt="Избранное" style="width: 1rem; margin-right: .5rem;">В избранное </button> <span id="status-message-esenin-ne-zhaleu" style="font-size: .8rem; color: #c9a86a; display: none;">Добавлено!</span>
+
                         </div>
                     </div>
                 </div>
@@ -214,7 +219,7 @@
 
             <!-- Стих 4: Марина Цветаева -->
             <div class="col-12 col-lg-6">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm" id="cvetaeva-mne-nravitsya">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex align-items-center mb-3">
                             <img src="images/cvetaeva.jpg" alt="Марина Цветаева" class="rounded-circle me-3 shadow-sm" style="width: 50px; height: 50px; object-fit: cover; filter: sepia(0.8);">
@@ -267,6 +272,8 @@
                                 <span class="btn-text">Читать полностью</span>
                             </button>
                             <a href="cvetaeva.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                            <button onclick="toggleFavorite('cvetaeva-mne-nravitsya');" class="btn btn-warning btn-sm me-2" id="favorite-btn-cvetaeva-mne-nravitsya"><img src="images/heart.png" alt="Избранное" style="width: 1rem; margin-right: .5rem;">В избранное </button> <span id="status-message-cvetaeva-mne-nravitsya" style="font-size: .8rem; color: #c9a86a; display: none;">Добавлено!</span>
+
                         </div>
                     </div>
                 </div>
@@ -274,7 +281,7 @@
 
             <!-- Стих 5: Владимир Маяковский -->
             <div class="col-12 col-lg-6">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm" id="mayakovskiy-poslushaite">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex align-items-center mb-3">
                                 <img src="images/mayakovskiy.jpg" alt="Владимир Маяковский" class="rounded-circle me-3 shadow-sm" style="width: 50px; height: 50px; object-fit: cover; object-position: 20% 10%; filter: sepia(0.8);">                            <div>
@@ -332,6 +339,8 @@
                                 <span class="btn-text">Читать полностью</span>
                             </button>
                             <a href="mayakovsky.html" class="btn btn-sm btn-outline-primary">К биографии</a>
+                            <button onclick="toggleFavorite('mayakovskiy-poslushaite');" class="btn btn-warning btn-sm me-2" id="favorite-btn-mayakovskiy-poslushaite"><img src="images/heart.png" alt="Избранное" style="width: 1rem; margin-right: .5rem;">В избранное </button> <span id="status-message-mayakovskiy-poslushaite" style="font-size: .8rem; color: #c9a86a; display: none;">Добавлено!</span>
+
                         </div>
                     </div>
                 </div>
@@ -445,5 +454,6 @@
             });
         });
     </script>
+    <script src="js/favorites.js"></script>
 </body>
 </html>
